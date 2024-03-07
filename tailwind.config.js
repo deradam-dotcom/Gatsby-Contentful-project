@@ -7,8 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lead: "#b1ffa4",
-        text: "#004947",
+        lead: "#f8cf27",
+        text: "#000000",
+        footer: "#2A2A2A",
         section: "#F5F5F5",
         overlay: "rgba(0, 73, 71, 0.30)",
         white: "#fff",

@@ -2,7 +2,7 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `vertiflora`,
+    title: `flowalpin`,
     siteUrl: `https://www.yourdomain.tld`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -12,8 +12,8 @@ const config: GatsbyConfig = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "5frYQx8_0CZM_i2bdLhyFj0uUSLClxOdH0BPKIvXCh4",
-      "spaceId": "doiibujz27u2"
+      "accessToken": "OnZaAZsZxt2Ar9OXsjDUutTElfWl1DbZcmiGdrcjhfc",
+      "spaceId": "l4j8xiyen6rb"
     }
   }, "gatsby-plugin-image",  {
     resolve: 'gatsby-plugin-sharp',
@@ -31,7 +31,14 @@ const config: GatsbyConfig = {
         omitKeys: ['xmlnsSerif']
       }
     }
-  }, 
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'pages',
+      path: `${__dirname}/src/pages`
+    }
+  },
  "gatsby-transformer-sharp", "gatsby-plugin-postcss"]
 };
 

@@ -1,9 +1,9 @@
 {
-  "name": "vertiflora",
+  "name": "flowalpin",
   "version": "1.0.0",
   "private": true,
-  "description": "vertiflora",
-  "author": "Norbert Berenyi",
+  "description": "flowalpin",
+  "author": "Dér Ádám",
   "keywords": [
     "gatsby"
   ],
@@ -27,6 +27,7 @@
     "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-plugin-webfonts": "^2.3.2",
     "gatsby-source-contentful": "^8.12.5",
+    "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.12.3",
     "postcss": "^8.4.32",
     "react": "^18.2.0",

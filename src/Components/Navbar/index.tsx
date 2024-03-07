@@ -3,12 +3,13 @@ import { Navbar } from 'react-bootstrap';
 import { StaticImage } from 'gatsby-plugin-image';
 import NavMenu from './NavMenu';
 import CloseIcon from '../../images/Icons/closeIcon.inline.svg';
+import LogoIcon from "../../images/Icons/logo.inline.svg";
 
 const CustomNavbar = () => {
-	const [isClicked, setIsClicked] = useState(false);
-	const showCloseIcon = () => setIsClicked(!isClicked);
+  const [isClicked, setIsClicked] = useState(false);
+  const showCloseIcon = () => setIsClicked(!isClicked);
 
-	return (
+  return (
     <Navbar
       collapseOnSelect
       expand="lg"
@@ -16,16 +17,13 @@ const CustomNavbar = () => {
       variant="light"
       className="text-right text-lg-left align-items-start pt-4"
     >
-      <Navbar.Brand
-        href="/"
-        className="d-none d-md-block pl-[30px] pt-[6px] m-0"
-      >
+      <Navbar.Brand href="/" className="d-none d-md-block pl-[30px] m-0">
         <StaticImage
-          height={60}
+          height={150}
           src="../../images/Brand/logo.png"
-          alt="Veritgo logo"
+          alt="flowalpin logo"
           placeholder="blurred"
-          className="ml-5"
+          className="ml-5 mt-3"
         />
       </Navbar.Brand>
       <Navbar.Toggle
@@ -42,7 +40,7 @@ const CustomNavbar = () => {
         <NavMenu />
       </Navbar.Collapse>
       <div
-        className="custom-mobileNav"
+        className="custom-mobileNav rounded-[8px] h-150"
         style={{ left: isClicked ? "0" : "-100%" }}
       >
         <NavMenu />
@@ -51,7 +49,7 @@ const CustomNavbar = () => {
       <div className="ml-auto d-lg-none mr-14">
         <Navbar.Brand href="/">
           <StaticImage
-            height={60}
+            height={150}
             src="../../images/Brand/logo.png"
             alt="Veritgo logo"
             placeholder="blurred"

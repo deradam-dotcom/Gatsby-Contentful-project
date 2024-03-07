@@ -20,7 +20,7 @@ const ReferencesSlider = () => {
       {
         breakpoint: 600,
         settings: {
-          variableWidth: true,
+          variableWidth: false,
           centerMode: false,
         },
       },
@@ -28,9 +28,9 @@ const ReferencesSlider = () => {
   };
 
   return (
-    <div className="h-auto w-full bg-section mt-[59px] lg:mt-[84px] pt-[40px] lg:pt-[70px] text-center pb-[0px] lg:pb-[70px]">
-      <span className="font-sharp font-normal text-black text-[16px] whitspace-nowrap">
-        REFERENCES
+    <div className="h-auto w-full bg-section mt-[59px] lg:mt-[84px] pt-[40px] lg:pt-[70px] text-center pb-[50px] lg:pb-[96px]">
+      <span className="font-sharp font-normal text-black text-[18px] whitspace-nowrap">
+        REFERENCIÁK
       </span>
       <Container className="pt-[25px] lg:pt-[34px] px-0">
         <Row className="relative">
@@ -38,35 +38,41 @@ const ReferencesSlider = () => {
             <Col className="image-container text-center mr-5 cursor-pointer">
               <StaticImage
                 height={662}
-                src="../../images/References/Budaörs.png"
-                alt="Budaörs"
+                src="../../images/References/header1.jpeg"
+                alt="Wesselényi utca"
                 placeholder="blurred"
-                className="rounded rounded-[10px]"
+                className="rounded-[10px]"
               />
-              <ReferenceCard title="BUDAÖRS" description="Dechatlon" />
+              <ReferenceCard
+                title="WESSELENYI UTCA"
+                description="Homlokzat veszélytelenítés"
+              />
             </Col>
             <Col className="image-container text-center cursor-pointer">
               <StaticImage
                 height={662}
-                src="../../images/References/Üllő.png"
-                alt="Üllő"
+                src="../../images/References/header8.jpeg"
+                alt="Havanna-lktp"
                 placeholder="blurred"
-                className="rounded rounded-[10px]"
+                className="rounded-[10px]"
               />
               <ReferenceCard
-                title="ÜLLŐ"
-                description="Teljesen automata zöldfal"
+                title="HAVANNA-LKTP"
+                description="Festés és szigetelés"
               />
             </Col>
             <Col className="image-container text-center mr-5 cursor-pointer">
               <StaticImage
-                height={662}
-                src="../../images/References/Balaton.png"
-                alt="Balaton"
+                height={660}
+                src="../../images/References/header7.jpeg"
+                alt="Váci út"
                 placeholder="blurred"
                 className="rounded rounded-[10px]"
               />
-              <ReferenceCard title="BALATONSZÁNTÓD" description="Balaland" />
+              <ReferenceCard
+                title="VÁCI ÚT"
+                description="ÁNTSZ épület veszélytelenítés"
+              />
             </Col>
           </Slider>
           <SliderController className="slider-controller" />

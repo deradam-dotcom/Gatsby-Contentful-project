@@ -2,22 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './fonts.css';
+@import "./fonts.css";
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .body-container {
-  background-image: url('../images/leaves.png');
+/*background-image: url("../images/leaves.png");*/
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: auto;
   width: 100%;
-
 }
 
+.footer-container {
+  width: 95% !important;
+}
 .card-container {
   transition: all 0.4s ease-in-out;
 }
@@ -33,15 +36,22 @@ p {
   display: block;
   position: absolute;
   width: 100px !important;
-  bottom: 250px;
-    right: 300px;
+  bottom: 350px;
+    right: 150px;
     z-index: 1;
 }
 /* Customize Responsive Navbar */
-.nav-link {
-  color: #b1ffa4 !important;
+.nav-link,
+a {
+  color: #f8cf27 !important;
+  text-decoration: none;
 }
 
+.nav-link,
+a:hover {
+  color: #edc524 !important;
+  text-decoration: underline;
+}
 .custom-mobileNav {
   display: none;
 }
@@ -56,31 +66,86 @@ button.navbar-toggler.collapsed {
 }
 
 .navbar-toggler-icon {
-  background-image: url('../images/Icons/hamburger-icon.svg') !important;
+  background-image: url("../images/Icons/hamburger-icon.svg") !important;
 }
 
-@media screen and (max-width: 1192px) {
-  .mobile-nav {
-      display: none;
-  }
-.service-card {
-  margin-top: 20px !important;
-}
-
-.custom-mobileNav {
+.form-control {
+  border: 1px solid black !important;
+  border-radius: 8px;
   display: block;
-  position: absolute;
-  top: 0;
-  margin-top: 98px;
-  height: 100vh;
-  width: 100%;
-  transition: left 0.4s ease-in-out;
-  background-color: #fff;
-  z-index: 1;
 }
 
-.slider-controller {
+.form-control:focus {
+  border-color: black !important;
+  box-shadow: none !important;
+}
+input[type='checkbox'] {
   display: none;
 }
+
+input[type='checkbox']+ ::before {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-right: 15px;
+  position: relative;
 }
 
+input[type='checkbox']:checked+*::before {
+  content: '✓';
+  color: black;
+  padding-right: 5px;
+  text-align: right;
+  border-color: black;
+  position: relative;
+}
+
+.checkbox>label {
+  display: block;
+  text-indent: -25px;
+  padding-left: 20px;
+}
+
+.checkbox {
+  margin-bottom: 24px;
+}
+
+.buttonColumn {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 28px;
+  /* @include media-breakpoint-down(md) {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  } */
+}
+@media screen and (max-width: 1192px) {
+  .mobile-nav {
+    display: none;
+  }
+
+    .service-card {
+      margin-top: 20px !important;
+    }
+
+    .custom-mobileNav {
+      display: block;
+      position: absolute;
+      top: 0;
+      margin-top: 98px;
+      height: 100vh;
+      width: 100%;
+      transition: left 0.4s ease-in-out;
+      background-color: #fff;
+      z-index: 1;
+    }
+
+    .slider-controller {
+      display: none;
+    }
+
+}
