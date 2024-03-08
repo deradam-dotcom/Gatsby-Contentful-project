@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import type { HeadFC, PageProps } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer/Footer";
@@ -97,10 +97,10 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }: { data: any }) => {
     <>
       <Container fluid className="body-container">
         <Header isVideoHeader={false} />
-        <Container className="mt-[40px]">
+        <Container className=" mt-[45px] lg:mt-[65px]">
           <Row>
             <Col md={6}>
-              <h3 className="font-sharp_bold font-normal text-text text-[28px] tracking-[0] leading-[22px]">
+              <h3 className="font-sharp_bold font-normal text-text text-[28px] tracking-[0] leading-[22px] mb-[16px]">
                 KAPCSOLAT
               </h3>
               <p className="font-sharp font-normal text-text text-[16px] tracking-[0] leading-[22px] mt-[16px]">
@@ -115,37 +115,48 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }: { data: any }) => {
                   flowalpin@gmail.com
                 </span>
               </div>
-              <div className="flex align-items-center mt-[10px] mb-[10px]">
+              <div className="flex align-items-center mt-[10px] mb-[24px]">
                 <PhoneIcon />
                 <span className="font-sharp font-normal text-text text-[13px]">
                   +36204116443
                 </span>
               </div>
               <Form />
-              <h3 className="title"></h3>
-              <p>
+              <h3 className="font-sharp_bold font-normal text-text text-[20px] tracking-[0] leading-[22px] mt-[60px] mb-[16px]">
+                KÖZÖSSÉGI
+              </h3>
+              <div className="flex align-items-center justify-content-start mt-[14px] mb-[24px]">
                 <a title="facebook" href="#">
                   <FacebookCircleIcon className="" />
                 </a>
                 <a title="instagram" href="#">
-                  <InstagramCircleIcon className="" />
+                  <InstagramCircleIcon className="mx-4" />
                 </a>
                 <a title="linkedin" href="#">
                   <LinkedinCircleIcon className="" />
                 </a>
-              </p>
+              </div>
             </Col>
-            <Col md={6} className="text-center">
+            <Col
+              md={5}
+              className="text-center mb-[40px] lg:mb-[0px] ml-0 lg:ml-5"
+            >
               {/* <GatsbyImage
                 image={getImage(image)}
                 alt={contact.imageAlt}
                 className="image"
               /> */}
+              <StaticImage
+                height={650}
+                src="../../images/References/header1.jpeg"
+                alt="Váci út"
+                placeholder="blurred"
+                className="w-full object-cover rounded-[8px]"
+              />
             </Col>
           </Row>
         </Container>
       </Container>
-
       <Footer footerData={"footerData"} />
     </>
   );

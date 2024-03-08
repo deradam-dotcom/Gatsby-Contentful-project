@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Form } from "react-bootstrap";
+import SubmitButton from "../Buttons/SubmitButton";
 
 const ContactForm = () => {
   return (
@@ -10,7 +11,7 @@ const ContactForm = () => {
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
       </p>
-      <Form.Group className="mb-3" controlId="controlInput1">
+      <Form.Group className="mb-[32px]" controlId="controlInput1">
         <Form.Label>Email</Form.Label>
         <Form.Control
           required
@@ -40,7 +41,9 @@ const ContactForm = () => {
         />
       </Row>
       <Row>
-        <Col className=""></Col>
+        <Col className="flex justify-center w-100 lg:w-full mt-5">
+          <SubmitButton title="Küldés" hasIcon={true} />
+        </Col>
       </Row>
     </Form>
   );

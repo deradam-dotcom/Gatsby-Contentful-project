@@ -51,7 +51,7 @@ const ReferencesSlider = () => {
             <Col className="image-container text-center cursor-pointer">
               <StaticImage
                 height={662}
-                src="../../images/References/header8.jpeg"
+                src="../../images/References/header5.jpeg"
                 alt="Havanna-lktp"
                 placeholder="blurred"
                 className="rounded-[10px]"
@@ -67,11 +67,11 @@ const ReferencesSlider = () => {
                 src="../../images/References/header7.jpeg"
                 alt="Váci út"
                 placeholder="blurred"
-                className="rounded rounded-[10px]"
+                className="rounded-[10px]"
               />
               <ReferenceCard
                 title="VÁCI ÚT"
-                description="ÁNTSZ épület veszélytelenítés"
+                description="ÁNTSZ ép. veszélytelenítés"
               />
             </Col>
           </Slider>
