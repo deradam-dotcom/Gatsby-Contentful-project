@@ -40,7 +40,7 @@ const CustomNavbar = () => {
         <NavMenu />
       </Navbar.Collapse>
       <div
-        className="custom-mobileNav rounded-[8px] h-150"
+        className="custom-mobileNav rounded-[8px] h-150 z-10"
         style={{ left: isClicked ? "0" : "-100%" }}
       >
         <NavMenu />

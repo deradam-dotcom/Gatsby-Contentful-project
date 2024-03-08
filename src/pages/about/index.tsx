@@ -119,7 +119,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }: { data: any }) => {
               <Line />
             </Col>
             <Col
-              className="text-center"
+              className="text-center "
               xs={{ span: 12, order: 1 }}
               md={{ span: 6, order: 1 }}
             >
@@ -133,7 +133,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }: { data: any }) => {
                 src="../../images/References/header2.jpeg"
                 alt="Váci út"
                 placeholder="blurred"
-                className="w-full object-cover rounded-[8px]"
+                className="w-full object-cover rounded-[8px] about-image"
               />
             </Col>
           </Row>
