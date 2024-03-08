@@ -11,7 +11,7 @@ body {
 }
 
 .body-container {
-/*background-image: url("../images/leaves.png");*/
+  /*background-image: url("../images/leaves.png");*/
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: auto;
@@ -37,7 +37,7 @@ p {
   position: absolute;
   width: 100px !important;
   bottom: 350px;
-    right: 150px;
+  right: 150px;
     z-index: 1;
 }
 /* Customize Responsive Navbar */
@@ -79,12 +79,12 @@ button.navbar-toggler.collapsed {
   border-color: black !important;
   box-shadow: none !important;
 }
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
 }
 
-input[type='checkbox']+ ::before {
-  content: '';
+input[type="checkbox"]+ ::before {
+  content: "";
   display: inline-block;
   vertical-align: bottom;
   width: 24px;
@@ -95,8 +95,8 @@ input[type='checkbox']+ ::before {
   position: relative;
 }
 
-input[type='checkbox']:checked+*::before {
-  content: '✓';
+input[type="checkbox"]:checked+*::before {
+  content: "✓";
   color: black;
   padding-right: 5px;
   text-align: right;
@@ -148,7 +148,7 @@ input[type='checkbox']:checked+*::before {
       display: none;
     }
 
-        button[type="submit"] {
-          width: 100% !important;
-        }
+    button[type="submit"] {
+      width: 100% !important;
+    }
 }

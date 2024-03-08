@@ -97,17 +97,17 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }: { data: any }) => {
     <>
       <Container fluid className="body-container">
         <Header isVideoHeader={false} />
-        <Container className=" mt-[45px] lg:mt-[65px]">
+        <Container className=" mt-[45px] lg:my-[65px]">
           <Row>
             <Col md={6}>
               <h3 className="font-sharp_bold font-normal text-text text-[28px] tracking-[0] leading-[22px] mb-[16px]">
                 KAPCSOLAT
               </h3>
               <p className="font-sharp font-normal text-text text-[16px] tracking-[0] leading-[22px] mt-[16px]">
-                Szeretne árajánlatot kérni alpinista munkához? Küldje el email
-                címét és írja meg nekünk pár mondatban milyen típusú munkárol
-                lenne szó, ezután felvesszük önnel a kapcsolatot és egy ingyenes
-                felmérést követően tudunk árajánlatot adni!
+                Szeretne azonnali árajánlatot kérni alpinista munkához? Küldje
+                el email címét és írja meg nekünk pár mondatban milyen típusú
+                munkárol lenne szó, ezután felvesszük önnel a kapcsolatot és egy
+                ingyenes felmérést követően tudunk árajánlatot adni.
               </p>
               <div className="flex align-items-center mt-[14px]">
                 <EnvelopeIcon />
