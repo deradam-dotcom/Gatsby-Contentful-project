@@ -38,7 +38,7 @@ p {
   width: 100px !important;
   bottom: 350px;
   right: 150px;
-    z-index: 1;
+  z-index: 1;
 }
 /* Customize Responsive Navbar */
 .nav-link,
@@ -114,14 +114,13 @@ input[type="checkbox"]:checked+*::before {
   margin-bottom: 24px;
 }
 
-.buttonColumn {
-  text-align: center;
-  margin-bottom: 60px;
-  margin-top: 28px;
-  /* @include media-breakpoint-down(md) {
-    margin-top: 24px;
-    margin-bottom: 48px;
-  } */
+.line-separator {
+  width: 100vw;
+  border-top: 1px solid #d2d2d2;
+}
+
+.about-section {
+  margin-top: 65px !important;
 }
 @media screen and (max-width: 1192px) {
   .mobile-nav {
@@ -150,5 +149,8 @@ input[type="checkbox"]:checked+*::before {
 
     button[type="submit"] {
       width: 100% !important;
+    }
+    .about-section {
+      margin-top: 0px !important;
     }
 }

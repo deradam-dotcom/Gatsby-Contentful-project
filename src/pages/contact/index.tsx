@@ -97,7 +97,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }: { data: any }) => {
     <>
       <Container fluid className="body-container">
         <Header isVideoHeader={false} />
-        <Container className=" mt-[45px] lg:my-[65px]">
+        <Container className="mt-[45px] lg:my-[65px]">
           <Row>
             <Col md={6}>
               <h3 className="font-sharp_bold font-normal text-text text-[28px] tracking-[0] leading-[22px] mb-[16px]">
