@@ -3,8 +3,8 @@ import { graphql } from "gatsby";
 import type { HeadFC, PageProps } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Container } from "react-bootstrap";
-import Header from "../../Components/Header";
-import Footer from "../../Components/Footer/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export interface AdditionalElements {

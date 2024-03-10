@@ -3,11 +3,11 @@ import { graphql } from 'gatsby';
 import type { HeadFC, PageProps } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { Container } from 'react-bootstrap';
-import Header from '../Components/Header';
-import AboutUs from '../Components/AboutUs';
-import ServiceCards from '../Components/ServiceCards';
-import ReferencesSlider from '../Components/ReferencesSlider';
-import Footer from "../Components/Footer/Footer";
+import Header from "../components/Header";
+import AboutUs from "../components/AboutUs";
+import ServiceCards from "../components/ServiceCards";
+import ReferencesSlider from "../components/ReferencesSlider";
+import Footer from "../components/Footer/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export interface AdditionalElements {

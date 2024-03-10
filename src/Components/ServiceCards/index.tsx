@@ -1,11 +1,14 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { ContentfulHeader } from '../../pages';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { ContentfulHeader } from "../../pages";
 import { Fade } from "react-awesome-reveal";
 import BubbleIcon from "../../images/Icons/bubble.inline.svg";
 import MapIcon from "../../images/Icons/map.inline.svg";
 import RollerIcon from "../../images/Icons/roller.inline.svg";
 import SettingsIcon from "../../images/Icons/settings.inline.svg";
+import CleanIcon from "../../images/Icons/clean.inline.svg";
+import CleaningIcon from "../../images/Icons/cleaning.inline.svg";
+import ToolsIcon from "../../images/Icons/tools.inline.svg";
 
 interface ServiceCardsProps {
   servicesData?: ContentfulHeader["additionalElements"];
@@ -60,7 +63,7 @@ const ServiceCards: React.FC<ServiceCardsProps> = ({ servicesData }) => {
           md={4}
           className="flex flex-column justify-content-center align-items-center  pt-[20px]"
         >
-          <BubbleIcon className="mb-3" />
+          <CleanIcon className="mb-3" />
           <p className="font-sharp_bold underline">Homlokzat mosás</p>
           <span className="text-center">
             Lorem Ipsum has been the industry's standard dummy text ever since
@@ -71,7 +74,7 @@ const ServiceCards: React.FC<ServiceCardsProps> = ({ servicesData }) => {
           md={4}
           className="flex flex-column justify-content-center align-items-center pt-[20px]"
         >
-          <RollerIcon className="mb-3" />
+          <SettingsIcon className="mb-3" />
           <p className="font-sharp_bold underline">Szerelési feladatok</p>
           <span className="text-center">
             Lorem Ipsum has been the industry's standard dummy text ever since
@@ -82,7 +85,7 @@ const ServiceCards: React.FC<ServiceCardsProps> = ({ servicesData }) => {
           md={4}
           className="flex flex-column justify-content-center align-items-center pt-[20px]"
         >
-          <MapIcon className="mb-3" />
+          <CleaningIcon className="mb-3" />
           <p className="font-sharp_bold underline">Tisztítási munkák</p>
           <span className="text-center">
             Lorem Ipsum has been the industry's standard dummy text ever since
@@ -93,7 +96,7 @@ const ServiceCards: React.FC<ServiceCardsProps> = ({ servicesData }) => {
           md={4}
           className="flex flex-column justify-content-center align-items-center pt-[20px] lg:pt-[20px]"
         >
-          <BubbleIcon className="mb-3" />
+          <ToolsIcon className="mb-3" />
           <p className="font-sharp_bold underline">Bontási munkák</p>
           <span className="text-center">
             Lorem Ipsum has been the industry's standard dummy text ever since

@@ -3,10 +3,10 @@ import { graphql } from "gatsby";
 import type { HeadFC, PageProps } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
-import Header from "../../Components/Header";
-import Footer from "../../Components/Footer/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Line from "../../Components/Line";
+import Line from "../../components/Line";
 
 export interface AdditionalElements {
   text: string;

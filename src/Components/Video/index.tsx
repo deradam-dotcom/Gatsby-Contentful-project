@@ -1,6 +1,6 @@
-import React from 'react';
-import { ContentfulHeader } from '../../pages';
-import HeaderVideo from "../../Videos/Alpin_Promo.mp4";
+import React from "react";
+import { ContentfulHeader } from "../../pages";
+import HeaderVideo from "../../videos/Alpin_Promo.mp4";
 
 // interface VideoProps {
 // 	videoData: ContentfulHeader['backgroundVideo']['url'];
