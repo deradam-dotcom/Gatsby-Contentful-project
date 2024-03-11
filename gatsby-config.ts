@@ -51,7 +51,7 @@ const config: GatsbyConfig = {
     resolve: 'gatsby-source-filesystem',
     options: {
       name: 'static',
-      path: `${__dirname}/src/static`
+      path: `${__dirname}/static`
     }
   },
  "gatsby-transformer-sharp", "gatsby-plugin-postcss"]
