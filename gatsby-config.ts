@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: '/Gatsby-Contentful-project',
   siteMetadata: {
     title: `flowalpin`,
     siteUrl: `https://www.yourdomain.tld`
