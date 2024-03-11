@@ -5,7 +5,6 @@ import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Line from "../../components/Line";
 
 export interface AdditionalElements {
@@ -106,15 +105,12 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }: { data: any }) => {
                 Szükséged van egy megbizható csapatra aki otthonosan mozog a
                 magasban és a földön egyaránt? A FLOWALPIN a megoldásod kulcsa.
                 Budapesten és vonzáskörzetében személyre szabott megoldásokkal
-                várunk. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation.
+                várunk. Az ipari alpintechnikát, mint gyors, biztonságos és
+                költségkímélő megoldást ajánljuk az érdeklődők számára.
+                Csapatunk minden apró részletre kiterjedő precíz, pontos,
+                minőségi szolgáltatást nyújt és arra törekszünk, hogy a
+                megrendelőkkel jó kapcsolatot alakítsunk ki, és bizalmukat
+                hosszútávon is elnyerjük.
               </p>
               <Line />
             </Col>

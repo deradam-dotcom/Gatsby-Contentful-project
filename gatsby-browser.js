@@ -1,4 +1,5 @@
 import "./src/styles/global.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const onInitialClientRender = () => {
   const style = document.createElement("style");

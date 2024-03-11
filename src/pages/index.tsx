@@ -8,7 +8,6 @@ import AboutUs from "../components/AboutUs";
 import ServiceCards from "../components/ServiceCards";
 import ReferencesSlider from "../components/ReferencesSlider";
 import Footer from "../components/Footer/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export interface AdditionalElements {
 	text: string;

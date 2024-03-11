@@ -1,11 +1,10 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import type { HeadFC, PageProps } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
-import { Container } from "react-bootstrap";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export interface AdditionalElements {
   text: string;
@@ -96,7 +95,37 @@ const ReferencesPage: React.FC<ReferencesPageProps> = ({
       <Container fluid className="body-container">
         <Header isVideoHeader={false} />
       </Container>
+      <Container>
+        <Row className="">
+          <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}></Col>
+          <Col
+            xs={{ span: 12, order: 1 }}
+            md={{ span: 6, order: 2 }}
+            className="text-center"
+          >
+            {/* <GatsbyImage
+              image={getImage(image1)}
+              alt={service.image1Alt}
+              className="image"
+            /> */}
+          </Col>
+        </Row>
 
+        <Row className="">
+          <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}></Col>
+          <Col
+            xs={{ span: 12, order: 1 }}
+            md={{ span: 6, order: 2 }}
+            className="text-center"
+          >
+            {/* <GatsbyImage
+              image={getImage(image2)}
+              alt={service.image2Alt}
+              className="image"
+            /> */}
+          </Col>
+        </Row>
+      </Container>
       <Footer footerData={"footerData"} />
     </>
   );

@@ -11,7 +11,6 @@ import InstagramCircleIcon from "../../images/Icons/instagramCircle.inline.svg";
 import LinkedinCircleIcon from "../../images/Icons/linkedinCircle.inline.svg";
 import EnvelopeIcon from "../../images/Icons/envelope.inline.svg";
 import PhoneIcon from "../../images/Icons/phone.inline.svg";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export interface AdditionalElements {
   text: string;
