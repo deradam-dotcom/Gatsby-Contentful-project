@@ -36,7 +36,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsData }) => {
             {/* <ContentfulRichText json={subtitleData} /> */}
             <StaticImage
               height={400}
-              src="../../images/alpin2.png"
+              src="/images/alpin2.png"
               alt="flowalpin_alpin"
               placeholder="blurred"
               className="ml-5 mt-5"
