@@ -20,7 +20,7 @@ const Header: React.FC<any> = ({ headerData, isVideoHeader }) => {
         <StaticImage
           height={400}
           width={1300}
-          src="/images/References/header8.png"
+          src="../../images/References/header8.png"
           alt="Váci út"
           placeholder="blurred"
           className="w-full object-cover rounded-[8px]"
