@@ -1,8 +1,8 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import ContentfulRichText from '../ContentfulRichText';
-import ArrowIcon from '../../images/Icons/rightArrow.inline.svg';
-import { ContentfulListOfElements } from '../../pages';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import ContentfulRichText from "../ContentfulRichText";
+import ArrowIcon from "../../images/Icons/rightArrow.inline.svg";
+import { ContentfulListOfElements } from "../../pages";
 import { StaticImage } from "gatsby-plugin-image";
 
 interface AboutUsProps {
@@ -26,7 +26,6 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsData }) => {
           <div className="flex flex-col font-sharp font-normal text-text text-[16px] tracking-[0] leading-[22px] mt-[6px]">
             {/* <span className="mb-4">{aboutUsData.title}</span> */}
             <span className="mb-4 font-bold">
-              {" "}
               Hol lehet szükség az ipari alpinistákra?
             </span>
             A nevével ellentétben nem csak az iparban…. Társasházak, családi
@@ -38,7 +37,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUsData }) => {
             <StaticImage
               height={400}
               src="../../images/alpin2.png"
-              alt="flowalpin logo"
+              alt="flowalpin_alpin"
               placeholder="blurred"
               className="ml-5 mt-5"
             />

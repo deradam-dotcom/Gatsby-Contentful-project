@@ -125,14 +125,26 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }: { data: any }) => {
                 KÖZÖSSÉGI
               </h3>
               <div className="flex align-items-center justify-content-start mt-[14px] mb-[24px]">
-                <a title="facebook" href="#">
-                  <FacebookCircleIcon className="" />
+                <a
+                  title="facebook"
+                  href="#"
+                  className="cursor-pointer transform hover:scale-90 transition-transform duration-300"
+                >
+                  <FacebookCircleIcon />
                 </a>
-                <a title="instagram" href="#">
-                  <InstagramCircleIcon className="mx-4" />
+                <a
+                  title="instagram"
+                  href="#"
+                  className="mx-4 cursor-pointer transform hover:scale-90 transition-transform duration-300"
+                >
+                  <InstagramCircleIcon />
                 </a>
-                <a title="linkedin" href="#">
-                  <LinkedinCircleIcon className="" />
+                <a
+                  title="linkedin"
+                  href="#"
+                  className="cursor-pointer transform hover:scale-90 transition-transform duration-300"
+                >
+                  <LinkedinCircleIcon />
                 </a>
               </div>
             </Col>

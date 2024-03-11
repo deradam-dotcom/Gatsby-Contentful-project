@@ -154,7 +154,10 @@ input[type="checkbox"]:checked+*::before {
     .about-section {
       margin-top: 0px !important;
     }
-    .about-image {
+                                                                                                                                .image {
       z-index: -1 !important;
     }
+.slick-slider {
+  padding: 0 5px 0 10px !important;
+}
 }

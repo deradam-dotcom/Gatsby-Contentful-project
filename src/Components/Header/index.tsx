@@ -1,10 +1,10 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { ContentfulHeader } from '../../pages';
-import { Fade } from 'react-awesome-reveal';
-import Video from '../Video';
-import Navbar from '../Navbar';
-import CtaButton from '../Buttons/CtaButton';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { ContentfulHeader } from "../../pages";
+import { Fade } from "react-awesome-reveal";
+import Video from "../Video";
+import Navbar from "../Navbar";
+import CtaButton from "../Buttons/CtaButton";
 import { StaticImage } from "gatsby-plugin-image";
 
 interface HeaderProps {
@@ -42,6 +42,8 @@ const Header: React.FC<any> = ({ headerData, isVideoHeader }) => {
               <span className="relative font-sharp font-medium text-lead text-[14px] lg:text-[16px] text-center tracking-[0] leading-[14px] lg:leading-[22px]">
                 Egy megbízható, profi és rugalmas partner az alpintechnikai
                 munkákhoz több éves tapasztalattal.
+                <br />
+                Ismerd meg referenciáinkat és bízd ránk a magaslati kihívásokat!
               </span>
               <CtaButton
                 title="Azonnali ajánlatot szeretne?"

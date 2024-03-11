@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import { Col, Container, Row } from "react-bootstrap";
 import { StaticQuery, graphql } from "gatsby";
 import FacebookCircleIcon from "../../images/Icons/facebookCircle.inline.svg";
@@ -12,13 +12,21 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ footerData }) => {
+  const navigateToHome = (): Promise<void> => {
+    return navigate("/");
+  };
+
   return (
     <Container
       fluid
       className="footer-container bg-footer footer p-3 rounded-t-[50px]"
     >
       <Row className="py-3 font-sharp font-normal text-[14px]">
-        <Col md={4} className="flex justify-content-center align-items-center">
+        <Col
+          md={4}
+          className="flex justify-content-center align-items-center cursor-pointer"
+          onClick={navigateToHome}
+        >
           <LogoIcon />
         </Col>
         <Col

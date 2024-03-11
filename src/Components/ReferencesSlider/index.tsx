@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import ReferenceCard from "./ReferenceCard";
 import SliderController from "../../images/Icons/sliderController.inline.svg";
@@ -35,7 +35,7 @@ const ReferencesSlider = () => {
       <Container className="pt-[25px] lg:pt-[34px] px-0">
         <Row className="relative">
           <Slider {...settings}>
-            <Col className="image-container text-center mr-5 cursor-pointer">
+            <Col className="image-container text-center mr-5 cursor-pointer transform hover:scale-90 transition-transform duration-300">
               <StaticImage
                 height={662}
                 src="../../images/References/header1.jpeg"
@@ -46,9 +46,10 @@ const ReferencesSlider = () => {
               <ReferenceCard
                 title="WESSELENYI UTCA"
                 description="Homlokzat veszélytelenítés"
+                id="1"
               />
             </Col>
-            <Col className="image-container text-center cursor-pointer">
+            <Col className="image-container text-center cursor-pointer transform hover:scale-90  transition-transform duration-300">
               <StaticImage
                 height={662}
                 src="../../images/References/header5.jpeg"
@@ -59,9 +60,10 @@ const ReferencesSlider = () => {
               <ReferenceCard
                 title="HAVANNA-LKTP"
                 description="Festés és szigetelés"
+                id="2"
               />
             </Col>
-            <Col className="image-container text-center mr-5 cursor-pointer">
+            <Col className="image-container text-center mr-5 cursor-pointer transform hover:scale-90  transition-transform duration-300">
               <StaticImage
                 height={660}
                 src="../../images/References/header7.jpeg"
@@ -72,6 +74,7 @@ const ReferencesSlider = () => {
               <ReferenceCard
                 title="VÁCI ÚT"
                 description="ÁNTSZ ép. veszélytelenítés"
+                id="3"
               />
             </Col>
           </Slider>
