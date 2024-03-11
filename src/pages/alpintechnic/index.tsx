@@ -182,7 +182,7 @@ const AlpintechnicPage: React.FC<AlpintechnicPageProps> = ({
         <Line />
         <Row>
           <Col className="text-center my-5">
-            <p>
+            <p className="font-sharp font-normal text-text text-[14px] tracking-[0] leading-[22px] italic">
               Ipari alpinista egyedül nem dolgozhat, a minimum létszám 2 fő,
               megfelelő képesítéssel. Az ipari alpinista munkáját Magyarországon
               az alábbi rendelet szabályozza: „11/2003. (IX.12) FMM rendelet az

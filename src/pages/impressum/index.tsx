@@ -94,7 +94,51 @@ const ImpressumPage: React.FC<ImpressumPageProps> = ({
     <>
       <Container fluid className="body-container">
         <Header isVideoHeader={false} />
-        <Container className="mt-[45px] lg:my-[65px]"></Container>
+        <Container className="h-full flex items-center justify-center text-center my-[50px] lg:my-[100px]">
+          <Row className="h-full w-full flex items-center justify-center lg:py-[100px]">
+            <Col className="h-full lg:py-[65px]">
+              <h3 className="font-sharp_bold font-normal text-text text-[25px] tracking-[0] leading-[22px] mb-[26px] text-center">
+                IMPRESSUM
+              </h3>
+              <p
+                className="font-sharp font-normal text-text text-[16px] tracking-[0] leading-[22px] mb-3 text-center"
+                style={{
+                  background: "#edc524",
+                  boxDecorationBreak: "clone",
+                  WebkitBoxDecorationBreak: "clone",
+                  display: "inline",
+                  padding: "5px 12px",
+                }}
+              >
+                Flow Alpin
+              </p>
+              <div className="font-sharp font-normal text-text text-[15px] tracking-[0] leading-[22px] w-full h-full flex flex-col lg:flex-row items-start lg:items-center justify-between mt-5">
+                <p className="mb-3">
+                  <u> Cím:</u> 1118 Budapest Ménesi út 80.
+                </p>
+                <p className="mb-3">
+                  <u> Adószám:</u> 88555452
+                </p>
+                <p className="mb-3">
+                  <u> Telsz:</u> +36204116443
+                </p>
+                <p className="mb-3">
+                  <u>Email:</u> flowalpin@gmail.com
+                </p>
+                <p className="mb-3">
+                  <u>Hosting:</u>&nbsp;
+                  <a
+                    href="https://www.mhosting.hu/kapcsolat"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Magyar Hosting Kft.
+                  </a>
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </Container>
       <Footer footerData={"footerData"} />
     </>
