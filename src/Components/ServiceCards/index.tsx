@@ -14,6 +14,45 @@ interface ServiceCardsProps {
   servicesData?: ContentfulHeader["additionalElements"];
 }
 
+const services = [
+  {
+    icon: <BubbleIcon className="mb-3" />,
+    title: "Veszélytelenítés",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+  },
+  {
+    icon: <RollerIcon className="mb-3" />,
+    title: "Homlokzati festés",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+  },
+  {
+    icon: <MapIcon className="mb-3" />,
+    title: "Karbantartási munkák",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+  },
+  {
+    icon: <CleanIcon className="mb-3" />,
+    title: "Homlokzati festés",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+  },
+  {
+    icon: <RollerIcon className="mb-3" />,
+    title: "Homlokzati festés",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+  },
+  {
+    icon: <RollerIcon className="mb-3" />,
+    title: "Homlokzati festés",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+  },
+];
+
 const ServiceCards: React.FC<ServiceCardsProps> = ({ servicesData }) => {
   return (
     <Container>
@@ -25,6 +64,17 @@ const ServiceCards: React.FC<ServiceCardsProps> = ({ servicesData }) => {
         </Col>
       </Row>
       <Row className="justify-content-md-center font-sharp font-normal text-text text-[12px] lg:text-[14px]">
+        {/* {services.map((service: any, index: number) => (
+          <Fade triggerOnce delay={index * 60}>
+            <Col md={4} key={index} className="flex">
+              <div className="flex flex-column justify-content-center align-items-center">
+                {service.icon}
+                <p className="font-sharp_bold underline">{service.title}</p>
+                <span className="text-center">{service.description}</span>
+              </div>
+            </Col>
+          </Fade>
+        ))} */}
         <Col
           md={4}
           className="flex flex-column justify-content-center align-items-center"
