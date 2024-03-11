@@ -38,7 +38,7 @@ const ReferencesSlider = () => {
             <Col className="image-container text-center mr-5 cursor-pointer transform hover:scale-90 transition-transform duration-300">
               <StaticImage
                 height={662}
-                src="../../images/References/header1.jpeg"
+                src="../../images/References/renamed.jpg"
                 alt="Wesselényi utca"
                 placeholder="blurred"
                 className="rounded-[10px]"

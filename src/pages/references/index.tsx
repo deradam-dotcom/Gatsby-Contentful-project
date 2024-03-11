@@ -136,7 +136,7 @@ const ReferencesPage: React.FC<ReferencesPageProps> = ({
           >
             <StaticImage
               height={430}
-              src="../../images/References/renamed.jpg"
+              src="../../images/References/header1.jpeg"
               alt="Wesselényi utca"
               placeholder="blurred"
               className="rounded-[10px] image"
