@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Navbar } from 'react-bootstrap';
-import { StaticImage } from 'gatsby-plugin-image';
-import NavMenu from './NavMenu';
-import CloseIcon from '../../images/Icons/closeIcon.inline.svg';
+import React, { useState } from "react";
+import { Navbar } from "react-bootstrap";
+import { StaticImage } from "gatsby-plugin-image";
+import NavMenu from "./NavMenu";
+import CloseIcon from "../../images/Icons/closeIcon.inline.svg";
 import LogoIcon from "../../images/Icons/logo.inline.svg";
 
 const CustomNavbar = () => {
@@ -21,7 +21,7 @@ const CustomNavbar = () => {
         <StaticImage
           height={150}
           src="../../images/Brand/logo.png"
-          alt="flowalpin logo"
+          alt="flowalpin_logo"
           placeholder="blurred"
           className="ml-5 mt-3"
         />
@@ -51,7 +51,7 @@ const CustomNavbar = () => {
           <StaticImage
             height={150}
             src="../../images/Brand/logo.png"
-            alt="Veritgo logo"
+            alt="flowalpin_logo"
             placeholder="blurred"
           />
         </Navbar.Brand>

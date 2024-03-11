@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Tanker';
-    src: url('/fonts/Tanker-Regular.woff') format('woff');
+    src: url('fonts/Tanker-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sharp';
-    src: url('/fonts/Sharp-Grotesk.woff') format('woff');
+    src: url('fonts/Sharp-Grotesk.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sharp-Bold';
-    src: url('/fonts/Sharp-Grotesk-Bold.woff') format('woff');
+    src: url('fonts/Sharp-Grotesk-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
