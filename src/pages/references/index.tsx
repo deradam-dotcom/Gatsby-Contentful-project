@@ -136,7 +136,7 @@ const ReferencesPage: React.FC<ReferencesPageProps> = ({
           >
             <StaticImage
               height={430}
-              src="/images/References/header1.jpeg"
+              src="/static/References/header1.jpeg"
               alt="Wesselényi utca"
               placeholder="blurred"
               className="rounded-[10px] image"
@@ -175,7 +175,7 @@ const ReferencesPage: React.FC<ReferencesPageProps> = ({
           >
             <StaticImage
               height={430}
-              src="/images/References/header5.jpeg"
+              src="/static/References/header5.jpeg"
               alt="Wesselényi utca"
               placeholder="blurred"
               className="rounded-[10px]"
@@ -218,7 +218,7 @@ const ReferencesPage: React.FC<ReferencesPageProps> = ({
           >
             <StaticImage
               height={430}
-              src="/images/References/header7.jpeg"
+              src="/static/References/header7.jpeg"
               alt="Wesselényi utca"
               placeholder="blurred"
               className="rounded-[10px]"
